@@ -1,9 +1,6 @@
-import React, { FC, useEffect, useState } from "react";
-import { IAlbum, IPopularTrack, ITopHit } from "../types/types";
-import AlbumItem from "../components/albumItem";
-import axios from "axios";
+import { FC, useEffect, useState } from "react";
+import { IPopularTrack, ITopHit } from "../types/types";
 import { API_KEY } from "../Api";
-import AlbumList from "../components/AlbumList";
 import TopHitItem from "../components/topHitItem";
 import PopularTrackItem from "../components/popularTrackItem";
 

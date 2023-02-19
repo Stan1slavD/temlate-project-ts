@@ -2,11 +2,11 @@ import React, { FC } from "react";
 import { getImg } from "../checkImg";
 import { IArtist } from "../types/types";
 
-interface IArtistProps{
-    artist:IArtist
+interface IArtistProps {
+  artist: IArtist;
 }
 
-const ArtistItem:FC<IArtistProps>=({artist})=> {
+const ArtistItem: FC<IArtistProps> = ({ artist }) => {
   return (
     <div className="artist_card">
       <img
@@ -21,6 +21,6 @@ const ArtistItem:FC<IArtistProps>=({artist})=> {
       </div>
     </div>
   );
-}
+};
 
 export default ArtistItem;

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { getImg } from "../checkImg";
 import { ITrack } from "../types/types";
 
@@ -18,7 +18,7 @@ const TrackItem: FC<TrackItemProps> = ({ track }) => {
         height="50"
         alt="track"
       />
-      <a href="" className="h_link">
+      <a href="/" className="h_link">
         <img src="icons/heart.svg" alt="" width="25" height="25" />
       </a>
       <span className="song">{track.name}</span>

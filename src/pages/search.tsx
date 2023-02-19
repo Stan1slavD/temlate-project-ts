@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import AlbumItem from "../components/albumItem";
 import ArtistItem from "../components/artistItem";
-import PopularTrackItem from "../components/popularTrackItem";
 import { IAlbum, IArtist, IPopularTrack, ITrack } from "../types/types";
 import { API_KEY } from "../Api";
 import TrackItem from "../components/trackItem";
@@ -80,7 +79,7 @@ const SearchPage: FC = () => {
   }
 
   const findData = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key == "Enter" && inputValue !== "") {
+    if (event.key === "Enter" && inputValue !== "") {
       setAlbums([]);
       setArtists([]);
       setTracks([]);
